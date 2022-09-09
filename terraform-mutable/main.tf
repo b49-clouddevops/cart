@@ -12,9 +12,8 @@ module "cart" {
   COMPONENT            = var.COMPONENT 
   APP_PORT             = var.APP_PORT 
   WORKSPATION_IP       = var.WORKSPATION_IP
-
+  APP_VERSION          = var.APP_VERSION
 }
-
 
 # You cannot parameterise the source section of the terraform module : Branc name cannot be parameterised. 
 # That's the challenge with terraform : Terrafile from coretech
