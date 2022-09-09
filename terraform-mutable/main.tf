@@ -10,18 +10,10 @@ module "cart" {
   SPOT_INSTANCE_COUNT  = var.SPOT_INSTANCE_COUNT
   OD_INSTANCE_COUNT    = var.OD_INSTANCE_COUNT 
   COMPONENT            = var.COMPONENT 
-  
+  APP_PORT             = var.APP_PORT 
+  WORKSPATION_IP       = var.WORKSPATION_IP
 
 }
-
-
-variable "INSTANCE_TYPE" {}
-variable "ENV" {}
-variable "SPOT_INSTANCE_COUNT" {}
-variable "OD_INSTANCE_COUNT" {}
-variable "COMPONENT" {}
-variable "APP_PORT" {}
-variable "WORKSPATION_IP" {}
 
 
 # You cannot parameterise the source section of the terraform module : Branc name cannot be parameterised. 
