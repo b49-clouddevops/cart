@@ -12,8 +12,10 @@ module "cart" {
   COMPONENT            = var.COMPONENT 
   APP_PORT             = var.APP_PORT 
   WORKSPATION_IP       = var.WORKSPATION_IP
+  PROMETHEUS_IP        = var.PROMETHEUS_IP
   APP_VERSION          = var.APP_VERSION
   LB_TYPE              = "internal"
+
 }
 
 # You cannot parameterise the source section of the terraform module : Branc name cannot be parameterised. 
