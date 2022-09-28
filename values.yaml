@@ -1,4 +1,6 @@
-component: cart
+component:
+  name: cart
+  version: 7.0.0
 
 replicaCount: 1
 
