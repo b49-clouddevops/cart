@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: cart
-        image: 834725375088.dkr.ecr.us-east-1.amazonaws.com/cart:7.0.0
+        image: 834725375088.dkr.ecr.us-east-1.amazonaws.com/cart:10.0.0
         ports:
         - containerPort: 8080
         envFrom: 
