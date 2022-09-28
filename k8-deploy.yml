@@ -18,7 +18,20 @@ spec:
       - name: cart
         image: 834725375088.dkr.ecr.us-east-1.amazonaws.com/cart:7.0.0
         ports:
-        - containerPort: 80 
+        - containerPort: 8080
+        envFrom: 
+          - configMapRef: 
+              name: cart-cm 
+
+--- 
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cart-cm
+data:
+  REDIS_HOST: redis-dev.roboshop.internal
+  CATALOGUE_HOST: catalogue-service
+
 
 --- 
 apiVersion: v1
