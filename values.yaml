@@ -1,14 +1,17 @@
-component:
-  name: cart
-  version: 10.0.0
-
 replicaCount: 1
 
 image:
   repository: 834725375088.dkr.ecr.us-east-1.amazonaws.com/cart
   pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
   tag: "7.0.0"
+
+appVersion: 10.0.0  
+appPortNumber: 8080 
+appName: cart  
+
+ingress: 
+  enabled: false  
+
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
